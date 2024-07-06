@@ -1,0 +1,10 @@
+{
+    "semi": true,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "tabWidth": 4,
+    "spaceBeforeFunctionParen": true,
+    "space-before-function-paren": ["error", "always"],
+    "space-before-blocks": ["error", "always"]
+}
