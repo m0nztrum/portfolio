@@ -5,6 +5,7 @@ function Intro() {
             <div className="mx-auto flex flex-col h-full max-w-[1000px] justify-center px-8">
                 <p className="text-4xl">Hello, Its me</p>
                 <h1 className="text-4xl font-extrabold">
+                    {/* TODO: Create my very own*/}
                     <ReactTyped
                         strings={['Elvis']}
                         typeSpeed={100}
