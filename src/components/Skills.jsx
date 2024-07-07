@@ -11,15 +11,13 @@ function Skills() {
     };
 
     return (
-        <div id="skills" className="h-screen w-full text-rosePine-text">
-            {/* section header */}
+        <div id="skills" className="h-screen w-full">
             <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col justify-center px-8">
+                {/* section header */}
                 <div>
-                    <p className="inline text-5xl font-bold text-rosePine-pine">
-                        Skills
-                    </p>
-                    <p className="py-4 text-2xl text-rosePine-muted">
-                        These are the tools and technologies I've worked with
+                    <p className="inline text-5xl font-bold">Skills</p>
+                    <p className="py-4 text-2xl">
+                        These are the tools and technologies I have worked with
                     </p>
                 </div>
 

@@ -11,6 +11,9 @@ import bash from './technologies/Bash.png';
 import mysql from './technologies/MySQL.png';
 import express from './technologies/Express.png';
 
+import simpleShell from './projects/Shell.png';
+import testImage from './projects/testimage.png';
+
 export {
     css,
     git,
@@ -24,4 +27,6 @@ export {
     bash,
     mysql,
     express,
+    simpleShell,
+    testImage,
 };

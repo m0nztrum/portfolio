@@ -11,7 +11,11 @@ import {
     bash,
     express,
     mysql,
+    simpleShell,
+    testImage,
 } from '../assets/';
+
+import { SiTailwindcss, SiJavascript, SiReact } from 'react-icons/si';
 
 const technologies = [
     {
@@ -63,4 +67,56 @@ const technologies = [
         icon: mysql,
     },
 ];
-export { technologies };
+
+const projects = [
+    {
+        title: 'Simple Shell',
+        desc: 'A simple unix command line interpreter written fully in C. It prompts the user to input commands, executes and gives output.',
+        techStack: [
+            {
+                name: 'C',
+            },
+        ],
+        link: 'https://github.com/m0nztrum/simple_shell',
+        open: 'site for deployments',
+        image: simpleShell,
+    },
+    {
+        title: 'portfolio',
+        desc: 'Personal portfolio website showcasing my skills and projects.',
+        techStack: [
+            {
+                icon: SiReact,
+            },
+            {
+                icon: SiTailwindcss,
+            },
+            {
+                icon: SiJavascript,
+            },
+        ],
+        open: 'site for deployments',
+        link: 'https://github.com/m0nztrum/portfolio',
+        image: testImage,
+    },
+    {
+        title: 'flyfare',
+        desc: 'Web app to search for cheap flights',
+        techStack: [
+            {
+                icon: 'react',
+            },
+            {
+                icon: 'tailwindcss',
+            },
+            {
+                icon: 'javascript',
+            },
+        ],
+        open: 'deployed site',
+        link: 'https://github.com/m0nztrum/flyfare',
+        image: testImage,
+    },
+];
+
+export { technologies, projects };
