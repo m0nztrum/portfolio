@@ -1,3 +1,5 @@
+import { SiTailwindcss, SiJavascript, SiReact, SiC } from 'react-icons/si';
+
 import {
     git,
     html,
@@ -14,8 +16,6 @@ import {
     simpleShell,
     testImage,
 } from '../assets/';
-
-import { SiTailwindcss, SiJavascript, SiReact } from 'react-icons/si';
 
 const technologies = [
     {
@@ -75,6 +75,7 @@ const projects = [
         techStack: [
             {
                 name: 'C',
+                icon: SiC,
             },
         ],
         link: 'https://github.com/m0nztrum/simple_shell',
@@ -86,6 +87,7 @@ const projects = [
         desc: 'Personal portfolio website showcasing my skills and projects.',
         techStack: [
             {
+                name: 'React js',
                 icon: SiReact,
             },
             {
@@ -104,13 +106,13 @@ const projects = [
         desc: 'Web app to search for cheap flights',
         techStack: [
             {
-                icon: 'react',
+                icon: SiReact,
             },
             {
-                icon: 'tailwindcss',
+                icon: SiTailwindcss,
             },
             {
-                icon: 'javascript',
+                icon: SiJavascript,
             },
         ],
         open: 'deployed site',

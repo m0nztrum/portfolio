@@ -1,37 +1,18 @@
 import { projects } from '../constants';
+import ProjectCard from './ProjectCard';
 
-const ProjectCard = ({ title, desc, techStack, image }) => {
-    return (
-        <div className="rounded-2xl">
-            <div className="relative">
-                <img src={image} alt={`${title}`} className="w-full h-48" />
-            </div>
-            <div className="mt-5">
-                <h3 className="text-lg font-bold">{title}</h3>
-                <p className="mt-2 text-sm">{desc}</p>
-            </div>
-            <div className="mt-4 flex flex-wrap gap-2">
-                {techStack.map((tech, index) => (
-                    <p key={index} className="text-[14px]">
-                        {tech.icon}
-                    </p>
-                ))}
-            </div>
-        </div>
-    );
-};
 function Projects() {
     return (
         <div id="projects" className="w-full h-screen">
-            <div className="mx-auto px-8">
+            <div className="mx-auto px-8 flex flex-col max-w-[1000px] pt-[50px]">
                 {/* header for section */}
-                <div>
+                <div className="flex w-full pb-[42px]">
                     <p className="text-5xl font-bold">Projects</p>
                 </div>
                 {/* projects showcase section */}
-                <div className="grid grid-cols-1 gap-7">
-                    {projects.map((project, index) => (
-                        <ProjectCard key={index} {...project} />
+                <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+                    {projects.map((project) => (
+                        <ProjectCard key={project.title} {...project} />
                     ))}
                 </div>
             </div>
