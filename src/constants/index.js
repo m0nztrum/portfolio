@@ -71,7 +71,7 @@ const technologies = [
 const projects = [
     {
         title: 'Simple Shell',
-        desc: 'A simple unix command line interpreter written fully in C. It prompts the user to input commands, executes and gives output.',
+        desc: 'A simple unix command line interpreter written fully in C.',
         techStack: [
             {
                 name: 'C',

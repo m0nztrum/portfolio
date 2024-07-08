@@ -12,7 +12,7 @@ function Skills() {
 
     return (
         <div id="skills" className="h-screen w-full">
-            <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col justify-center px-8">
+            <div className="mx-auto flex h-full max-w-[1000px] flex-col justify-center px-8">
                 {/* section header */}
                 <div>
                     <p className="inline text-5xl font-bold">Skills</p>

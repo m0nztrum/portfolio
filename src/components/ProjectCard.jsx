@@ -2,7 +2,8 @@ import { createElement } from 'react';
 
 const ProjectCard = ({ title, desc, techStack, image }) => {
     return (
-        <div className="rounded-2xl p-5 md:p-6 bg-gray-950">
+        // TODO: Find bettter colors
+        <div className="rounded-2xl p-5 md:p-6 bg-gray-950 hover:scale-105 duration-500 transform">
             <div className="relative w-full">
                 <img
                     src={image}
@@ -18,6 +19,7 @@ const ProjectCard = ({ title, desc, techStack, image }) => {
             <div className="mt-4 flex flex-wrap gap-2">
                 {techStack.map((tech, index) => (
                     <p key={index} className="text-white text-lg pt-2">
+                        {/* FIX: Make the icon larger" */}
                         {createElement(tech.icon)}
                     </p>
                 ))}
