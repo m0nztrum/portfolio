@@ -1,7 +1,7 @@
 import { projects } from '../constants';
 import ProjectCard from './ProjectCard';
 
-function Projects() {
+export const Projects = () => {
     return (
         <div id="projects" className="w-full h-screen">
             <div className="mx-auto px-8 h-full flex flex-col max-w-[1000px] pt-[50px]">
@@ -18,6 +18,4 @@ function Projects() {
             </div>
         </div>
     );
-}
-
-export default Projects;
+};

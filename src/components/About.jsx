@@ -1,4 +1,4 @@
-function About() {
+export const About = () => {
     return (
         <div id="about" className="h-screen w-full">
             <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col justify-center px-8">
@@ -14,6 +14,4 @@ function About() {
             </div>
         </div>
     );
-}
-
-export default About;
+};

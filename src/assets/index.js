@@ -14,6 +14,8 @@ import express from './technologies/Express.png';
 import simpleShell from './projects/Shell.png';
 import testImage from './projects/testimage.png';
 
+import githubImage from './github.png';
+
 export {
     css,
     git,
@@ -29,4 +31,5 @@ export {
     express,
     simpleShell,
     testImage,
+    githubImage,
 };

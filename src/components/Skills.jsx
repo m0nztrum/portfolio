@@ -1,15 +1,22 @@
 import { technologies } from '../constants';
+import { motion } from 'framer-motion';
 
-function Skills() {
-    const Skill = ({ icon, name }) => {
-        return (
-            <div className="flex flex-col items-center transition-transform duration-150 hover:scale-125">
-                <img src={icon} alt={name} className="h-16 w-16" />
-                <p className="mt-2 text-xl">{name}</p>
-            </div>
-        );
-    };
+const Skill = ({ icon, name }) => {
+    return (
+        <motion.div
+            className="flex flex-col items-center"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.3 }}
+        >
+            <img src={icon} alt={name} className="h-16 w-16" />
+            <p className="mt-2 text-xl">{name}</p>
+        </motion.div>
+    );
+};
 
+export const Skills = () => {
     return (
         <div id="skills" className="h-screen w-full">
             <div className="mx-auto flex h-full max-w-[1000px] flex-col justify-center px-8">
@@ -33,6 +40,4 @@ function Skills() {
             </div>
         </div>
     );
-}
-
-export default Skills;
+};

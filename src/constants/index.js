@@ -1,4 +1,10 @@
-import { SiTailwindcss, SiJavascript, SiReact, SiC } from 'react-icons/si';
+import {
+    SiTailwindcss,
+    SiJavascript,
+    SiReact,
+    SiC,
+    SiVite,
+} from 'react-icons/si';
 
 import {
     git,
@@ -78,7 +84,7 @@ const projects = [
                 icon: SiC,
             },
         ],
-        link: 'https://github.com/m0nztrum/simple_shell',
+        githublink: 'https://github.com/m0nztrum/simple_shell',
         open: 'site for deployments',
         image: simpleShell,
     },
@@ -98,7 +104,7 @@ const projects = [
             },
         ],
         open: 'site for deployments',
-        link: 'https://github.com/m0nztrum/portfolio',
+        githublink: 'https://github.com/m0nztrum/portfolio',
         image: testImage,
     },
     {
@@ -114,11 +120,22 @@ const projects = [
             {
                 icon: SiJavascript,
             },
+            {
+                icon: SiVite,
+            },
         ],
         open: 'deployed site',
-        link: 'https://github.com/m0nztrum/flyfare',
+        githublink: 'https://github.com/m0nztrum/flyfare',
         image: testImage,
     },
 ];
 
-export { technologies, projects };
+const navItems = [
+    { name: 'Intro', id: '#intro' },
+    { name: 'About', id: '#about' },
+    { name: 'Skills', id: '#skills' },
+    { name: 'Projects', id: '#projects' },
+    { name: 'Contact', id: '#contact' },
+];
+
+export { technologies, projects, navItems };
