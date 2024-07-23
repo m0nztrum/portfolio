@@ -9,7 +9,7 @@ export const NavBar = () => {
                     className="flex flex-grow justify-center space-x-8"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 0.6 }}
                 >
                     {navItems.map((navItem) => (
                         <motion.a

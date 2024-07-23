@@ -1,10 +1,15 @@
 import { createElement } from 'react';
 import { githubImage } from '../assets';
+import { motion } from 'framer-motion';
 
 const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
     return (
         // TODO: Find bettter colors
-        <div className="rounded-2xl p-5 md:p-6 bg-gray-950 hover:scale-105 duration-500 transform">
+        <motion.div
+            className="rounded-2xl p-5 md:p-6 bg-gray-950 "
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5 }}
+        >
             <div className="relative w-full">
                 <img
                     src={image}
@@ -42,7 +47,7 @@ const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
                     </p>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

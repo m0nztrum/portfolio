@@ -4,7 +4,7 @@ export const Intro = () => {
     return (
         <div id="intro" className="h-screen w-full">
             <div className="mx-auto flex flex-col h-full max-w-[1000px] justify-center px-8">
-                <p className="text-3xl">
+                <p className="text-4xl">
                     <ReactTyped
                         strings={["Hey, It's me"]}
                         typeSpeed={60}
@@ -13,7 +13,7 @@ export const Intro = () => {
                         showCursor={false}
                     />
                 </p>
-                <h1 className="text-4xl font-extrabold">
+                <h1 className="text-6xl font-extrabold">
                     <ReactTyped
                         strings={['Elvis here']}
                         typeSpeed={50}
@@ -22,7 +22,7 @@ export const Intro = () => {
                         showCursor={false}
                     />
                 </h1>
-                <p className="font-bold">
+                <p className="font-bold text-3xl">
                     Student interested in Software engineering and Web
                     Development.
                 </p>
