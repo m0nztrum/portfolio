@@ -4,6 +4,7 @@ import {
     SiReact,
     SiC,
     SiVite,
+    SiExpress,
 } from 'react-icons/si';
 
 import {
@@ -20,7 +21,8 @@ import {
     express,
     mysql,
     simpleShell,
-    testImage,
+    portfolio,
+    flyfair,
 } from '../assets/';
 
 const technologies = [
@@ -102,13 +104,16 @@ const projects = [
             {
                 icon: SiJavascript,
             },
+            {
+                icon: SiVite,
+            },
         ],
         open: 'site for deployments',
         githublink: 'https://github.com/m0nztrum/portfolio',
-        image: testImage,
+        image: portfolio,
     },
     {
-        title: 'flyfare',
+        title: 'flyfair',
         desc: 'Web app to search for cheap flights',
         techStack: [
             {
@@ -123,10 +128,13 @@ const projects = [
             {
                 icon: SiVite,
             },
+            {
+                icon: SiExpress,
+            },
         ],
         open: 'deployed site',
-        githublink: 'https://github.com/m0nztrum/flyfare',
-        image: testImage,
+        githublink: 'https://github.com/m0nztrum/flyfair',
+        image: flyfair,
     },
 ];
 
