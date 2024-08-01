@@ -1,5 +1,5 @@
 import { projects } from '../constants';
-import ProjectCard from './ProjectCard';
+import { ProjectCard } from './ProjectCard';
 
 export const Projects = () => {
     return (

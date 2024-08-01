@@ -1,20 +1,6 @@
 import { technologies } from '../constants';
 import { motion } from 'framer-motion';
-
-const Skill = ({ icon, name }) => {
-    return (
-        <motion.div
-            className="flex flex-col items-center space-y-4 m-2"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            whileHover={{ scale: 1.3 }}
-            transition={{ duration: 0.5 }}
-        >
-            <img src={icon} alt={name} className="h-16 w-16" />
-            <p className="mt-2 text-xl">{name}</p>
-        </motion.div>
-    );
-};
+import { SkillIcon } from './SkillIcon';
 
 export const Skills = () => {
     return (
@@ -34,7 +20,7 @@ export const Skills = () => {
 
                 <div className="grid w-full grid-cols-2 gap-5 text-center sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5">
                     {technologies.map((technology) => (
-                        <Skill
+                        <SkillIcon
                             key={technology.name}
                             icon={technology.icon}
                             name={technology.name}

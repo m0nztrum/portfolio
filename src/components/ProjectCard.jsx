@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import { createElement } from 'react';
 import { githubImage } from '../assets';
 import { motion } from 'framer-motion';
 
-const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
+export const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
     return (
         // TODO: Find bettter colors
         <motion.div
-            className="rounded-2xl p-5 md:p-6 bg-gray-950 "
+            className="rounded-2xl p-5 md:p-4 bg-gray-950"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5 }}
         >
@@ -51,4 +52,15 @@ const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
     );
 };
 
-export default ProjectCard;
+ProjectCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    githublink: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    techStack: PropTypes.arrayOf(
+        PropTypes.shape({
+            icon: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
+                .isRequired,
+        }),
+    ),
+};

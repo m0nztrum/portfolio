@@ -14,7 +14,7 @@ export const NavBar = () => {
                     {navItems.map((navItem) => (
                         <motion.a
                             href={navItem.id}
-                            key="nav"
+                            key={`${navItem.id}`}
                             className="font-bold"
                             whileHover={{ scale: 1.2 }}
                             whileTap={{ scale: 0.9 }}

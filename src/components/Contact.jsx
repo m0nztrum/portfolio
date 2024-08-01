@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { FaGithub } from 'react-icons/fa';
 
 function Contact() {
