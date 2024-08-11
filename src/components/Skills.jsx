@@ -6,7 +6,6 @@ export const Skills = () => {
     return (
         <div id="skills" className="h-screen w-full">
             <div className="mx-auto flex h-full max-w-[1000px] flex-col justify-center px-8">
-                {/* section header */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
