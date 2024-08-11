@@ -53,8 +53,8 @@ export const Contact = () => {
     };
 
     return (
-        <div id="contact" className="w-full h-screen">
-            <div className="mx-auto flex h-full px-8 max-w-[1000px] flex-col justify-center items-center">
+        <div id="contact" className="w-full py-16">
+            <div className="mx-auto flex px-8 max-w-[1000px] flex-col justify-center items-center">
                 <p className="font-bold inline text-2xl mb-8">
                     Interested? Lets Connect!
                 </p>

@@ -3,8 +3,8 @@ import { ProjectCard } from './ProjectCard';
 
 export const Projects = () => {
     return (
-        <div id="projects" className="w-full h-screen">
-            <div className="mx-auto px-8 h-full flex flex-col max-w-[1000px] pt-[50px]">
+        <div id="projects" className="w-full py-16">
+            <div className="mx-auto px-8 flex flex-col max-w-[1000px] pt-[50px]">
                 {/* header for section */}
                 <div className="flex w-full pb-[42px]">
                     <p className="text-5xl font-bold">Projects</p>
