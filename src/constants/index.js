@@ -21,7 +21,7 @@ import {
     express,
     mysql,
     simpleShell,
-    portfolio,
+    m0nztrum,
     flyfair,
 } from '../assets/';
 
@@ -110,7 +110,7 @@ const projects = [
         ],
         open: 'site for deployments',
         githublink: 'https://github.com/m0nztrum/portfolio',
-        image: portfolio,
+        image: m0nztrum,
     },
     {
         title: 'flyfair',

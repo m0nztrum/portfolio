@@ -5,9 +5,8 @@ import { motion } from 'framer-motion';
 
 export const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
     return (
-        // TODO: Find bettter colors
         <motion.div
-            className="rounded-2xl p-5 md:p-4 bg-neutral-900"
+            className="rounded-2xl p-3 md:p-3 bg-neutral-900"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5 }}
         >
@@ -18,7 +17,6 @@ export const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
                     className="w-full h-48 rounded-xl"
                     loading="lazy"
                 />
-                {/* TODO: Add one for deployed links */}
                 <div className="absolute inset-0 m-3 flex justify-end">
                     <div
                         onClick={() => window.open(githublink, '_blank')}
@@ -43,7 +41,6 @@ export const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
                         key={index}
                         className="text-white text-2xl pt-2 space-x-2"
                     >
-                        {/* TODO: Make the icon larger" */}
                         {createElement(tech.icon)}
                     </p>
                 ))}

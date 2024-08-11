@@ -13,7 +13,7 @@ import express from './technologies/Express.png';
 
 import simpleShell from './projects/Shell.png';
 import testImage from './projects/testimage.png';
-import portfolio from './projects/portfolio.png';
+import m0nztrum from './projects/m0nztrum.png';
 import flyfair from './projects/flyfair.png';
 
 import githubImage from './github.png';
@@ -32,7 +32,7 @@ export {
     mysql,
     express,
     simpleShell,
-    portfolio,
+    m0nztrum,
     flyfair,
     testImage,
     githubImage,

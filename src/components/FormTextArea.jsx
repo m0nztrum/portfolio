@@ -13,7 +13,7 @@ export const FormTextArea = ({ name, placeholder, register, errors }) => {
                     placeholder={placeholder}
                     autoComplete="off"
                     {...register}
-                    className="w-full p-3 rounded-md capitalize mt-2 text-slate-900"
+                    className="w-full p-3 rounded-md capitalize mt-2 text-slate-900 bg-[#cbd5e1]"
                 />
                 {errors && (
                     <small className="text-red-500 block mt-1">
