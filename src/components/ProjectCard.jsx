@@ -7,7 +7,7 @@ export const ProjectCard = ({ title, desc, techStack, githublink, image }) => {
     return (
         // TODO: Find bettter colors
         <motion.div
-            className="rounded-2xl p-5 md:p-4 bg-gray-950"
+            className="rounded-2xl p-5 md:p-4 bg-neutral-900"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5 }}
         >
