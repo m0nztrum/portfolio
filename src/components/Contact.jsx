@@ -20,7 +20,7 @@ export const Contact = () => {
         message: z
             .string()
             .min(20, { message: 'Message should be minimum 20 characters.' })
-            .max(120, { message: 'Message can not exceed 120 characters.' }),
+            .max(200, { message: 'Message can not exceed 120 characters.' }),
     });
     const {
         register,
@@ -44,7 +44,9 @@ export const Contact = () => {
             .then(
                 () => {
                     console.log('SUCCESS');
-                    alert(`Dear ${data.user_name}!`);
+                    alert(
+                        `Dear ${data.user_name}! Your message has been sent. Thank you for taking time to look at my portfolio.`,
+                    );
                 },
                 (error) => {
                     console.log('FAILED TO SEND', error.text);
@@ -74,7 +76,7 @@ export const Contact = () => {
                     />
 
                     <FormInput
-                        type="text"
+                        type="email"
                         id="user_email"
                         name="user_email"
                         label="Email"
@@ -91,7 +93,7 @@ export const Contact = () => {
                     <div className="flex justify-center">
                         <button
                             type="submit"
-                            className="flex items-center sm:w-28 bg-neutral-900 pl-3 py-2 rounded-md cursor-pointer hover:bg-neutral-800"
+                            className="flex items-center sm:w-28 bg-neutral-900 pl-3 py-2 pr-5 rounded-md cursor-pointer hover:bg-neutral-800"
                         >
                             {<IoIosSend size={25} />} Send
                         </button>
