@@ -1,8 +1,8 @@
-import data from '../data/technologies.json';
+import { currentTech } from '../data/technologies';
 import { SkillIcon } from './SkillIcon';
 
 export const Skill = () => {
-    const skillIconItems = data.currentTech;
+    const skillIconItems = currentTech;
     return (
         <div className="relative py-16 sm:py-24" id="skills z-10">
             <div className="mb-10 space-y-4">

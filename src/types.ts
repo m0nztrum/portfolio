@@ -3,3 +3,10 @@ export type navItem = {
     link: string;
     icon?: JSX.Element;
 };
+
+export type techIconType = {
+    name: string;
+    description: string;
+    imageUrl: string;
+    bgColor: string;
+};
