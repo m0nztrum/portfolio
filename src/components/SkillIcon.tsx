@@ -5,7 +5,7 @@ export const SkillIcon = ({
 }) => {
     const { name, description, imageUrl, bgColor } = techInfo;
     return (
-        <div className="flex flex-1 gap-5 rounded-xl bg-dark-200 p-2.5 hover:bg-dark-300 transition-colors duration-200">
+        <div className="flex flex-1 gap-5 rounded-xl border border-dark-200 bg-dark-200 p-2.5 transition-colors duration-200 hover:border-[#fafafa] hover:bg-dark-300">
             <div className={`w-fit rounded-lg p-3 bg-[${bgColor}]`}>
                 <img src={imageUrl} alt={`${name} logo`} className="size-8" />
             </div>

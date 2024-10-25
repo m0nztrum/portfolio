@@ -1,5 +1,6 @@
 import { Navbar } from './components/Navbar';
 import { Skill } from './components/Skill';
+import { Footer } from './components/Footer';
 
 function App() {
     return (
@@ -7,6 +8,7 @@ function App() {
             <div className="mx-auto w-full max-w-7xl">
                 <Navbar />
                 <Skill />
+                <Footer />
             </div>
         </main>
     );
