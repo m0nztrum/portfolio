@@ -1,7 +1,6 @@
 import { House, Contact as ContactIcon, Briefcase, User } from 'lucide-react';
-import { navItem } from '../types';
 
-const navItems: navItem[] = [
+const navItems = [
     { name: 'Home', link: '#home', icon: <House /> },
     { name: 'About', link: '#about', icon: <User /> },
     { name: 'Skills', link: '#skills' },
