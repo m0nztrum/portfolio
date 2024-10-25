@@ -9,26 +9,20 @@
         {
             "name": "ReactJS",
             "description": "JavaScript Library",
-            "imageUrl": "/logo/webdev/react.svg",
+            "imageUrl": "../assets/techIcons/react.svg",
             "bgColor": "#61DAFB"
         },
         {
             "name": "TailwindCSS",
             "description": "CSS framework",
-            "imageUrl": "/logo/webdev/tailwindcss.svg",
+            "imageUrl": "../assets/techIcons/tailwind.svg",
             "bgColor": "#0EA5E9"
         },
         {
             "name": "Git",
             "description": "Version control",
-            "imageUrl": "/logo/webdev/git.svg",
+            "imageUrl": "../assets/techIcons/git.svg",
             "bgColor": "#F1502F"
-        },
-        {
-            "name": "Supabase",
-            "description": "Database client",
-            "imageUrl": "/logo/webdev/supabase.svg",
-            "bgColor": "#3ECF8E"
         },
         {
             "name": "Vercel",
