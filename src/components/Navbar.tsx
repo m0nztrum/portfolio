@@ -8,12 +8,7 @@ export const Navbar = () => {
                     key={index}
                     className="relative flex items-center space-x-1 text-neutral-50 hover:text-neutral-300"
                 >
-                    {/* for mobile screen sizes */}
-                    <a href={item.link} className="block sm:hidden">
-                        {item.icon}
-                    </a>
-                    {/* for larger screen sizes */}
-                    <a href={item.link} className="hidden font-medium sm:block">
+                    <a href={item.link} className="font-medium">
                         {item.name}
                     </a>
                 </div>
