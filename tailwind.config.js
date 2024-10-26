@@ -10,6 +10,9 @@ export default {
                 'dark-400': '#404040',
                 'dark-500': '#666666',
             },
+            fontFamily: {
+                sans: ['Gabarito', 'sans-serif'],
+            },
         },
     },
     plugins: [],
