@@ -1,5 +1,3 @@
-import { Github } from 'lucide-react';
-
 export const Footer = () => {
     return (
         <footer className="flex flex-row justify-between p-2">
