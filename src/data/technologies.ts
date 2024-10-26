@@ -3,31 +3,31 @@ export const currentTech = [
         name: 'TypeScript',
         description: 'JavaScript but better',
         imageUrl: '/images/techIcons/typescript.svg',
-        bgColor: '#007ACC',
+        bgColor: 'bg-[#007ACC]/20',
     },
     {
         name: 'ReactJS',
         description: 'JavaScript Library',
         imageUrl: 'images/techIcons/react.svg',
-        bgColor: '#61DAFB',
+        bgColor: 'bg-[#61DAFB]/20',
     },
     {
         name: 'TailwindCSS',
         description: 'CSS framework',
         imageUrl: 'images/techIcons/tailwind.svg',
-        bgColor: '#0EA5E9',
+        bgColor: 'bg-[#0EA5E9]/20',
     },
     {
         name: 'Git',
         description: 'Version control',
         imageUrl: 'images/techIcons/git.svg',
-        bgColor: '#F1502F',
+        bgColor: 'bg-[#F1502F]/20',
     },
     {
         name: 'Vercel',
         description: 'Deployment',
         imageUrl: 'images/techIcons/vercel.svg',
-        bgColor: 'white',
+        bgColor: 'bg-white/90',
     },
 ];
 export const programmingLanguages = [
