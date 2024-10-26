@@ -1,5 +1,5 @@
 import { currentTech } from '../data/technologies';
-import { SkillIcon } from './SkillIcon';
+import { SkillIcon } from './ui/SkillIcon';
 import { motion } from 'framer-motion';
 
 export const Skill = () => {
@@ -7,15 +7,17 @@ export const Skill = () => {
     return (
         <div className="relative z-10 py-16 sm:py-24" id="skills">
             <div className="mb-10 space-y-4">
-                <motion.h1
-                    initial={{ opacity: 0, x: -70 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.25 }}
-                    viewport={{ once: true }}
-                    className="text-3xl font-bold min-[430px]:text-4xl md:text-5xl dark:text-stone-200"
-                >
-                    Current Technologies
-                </motion.h1>
+                <div>
+                    <motion.h1
+                        initial={{ opacity: 0, x: -70 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                        viewport={{ once: true }}
+                        className="text-3xl font-bold min-[430px]:text-4xl md:text-5xl dark:text-stone-200"
+                    >
+                        Current Technologies
+                    </motion.h1>
+                </div>
                 <motion.p
                     initial={{ opacity: 0, x: -90 }}
                     whileInView={{ opacity: 1, x: 0 }}

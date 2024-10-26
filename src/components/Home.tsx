@@ -6,9 +6,11 @@ export const Home = () => {
                 id="home"
             >
                 <div className="relative z-10 flex flex-col items-center justify-center text-center font-bold">
-                    <p className="pb-8 pt-5 text-4xl">
-                        Hi, I&apos;m Elvis. A student pursuing Software Engineering and Web
-                        Development.
+                    <p className="max-w-5xl text-center text-[40px] font-bold leading-snug tracking-wide md:text-6xl lg:text-7xl">
+                        Hey, I&apos;m Elvis. Welcome to my side of the web.
+                    </p>
+                    <p className="pb-6 pt-5 text-xl text-dark-500 sm:text-base md:text-lg">
+                        I love exploring and creating cool stuff 🚀
                     </p>
                 </div>
             </div>
