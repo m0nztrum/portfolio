@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <footer className="flex flex-row justify-between p-2">
+        <footer className="p-2 text-center text-sm text-dark-500 md:text-base">
             <div>
                 <span>
                     Copyright© - {new Date().getFullYear()} | Designed and Developed by:{' '}
