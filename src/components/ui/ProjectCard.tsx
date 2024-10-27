@@ -11,7 +11,7 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
     const { title, description, imageUrl, tags } = project;
     const [hoveredTagIndex, setHoveredTagIndex] = useState<number | null>(null);
 
-    const handleMouseEnter = (index: number) => {
+    const handleMouseEnter = (index: number | null = null) => {
         setHoveredTagIndex(index);
     };
 
@@ -33,7 +33,7 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
                     duration: 0.1,
                 },
             }}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => handleMouseEnter()}
             onMouseLeave={handleMouseLeave}
         >
             {/* Project Image */}
@@ -64,7 +64,7 @@ export const ProjectCard = ({ project }: { project: ProjectCardProps }) => {
                                         className={`flex h-8 w-8 items-center rounded-lg ${tag.tagColor} px-1`}
                                     />
                                     <motion.div
-                                        className="absolute top-full text-zinc-50"
+                                        className="absolute left-1/2 top-full text-zinc-50"
                                         animate={hoveredTagIndex === index ? 'visible' : 'hidden'}
                                         initial={{ y: 0, x: '-50%' }}
                                         variants={tooltipVariants}

@@ -10,6 +10,12 @@ export type techIconType = {
     bgColor: string;
 };
 
+interface Tag {
+    tagName: string;
+    tagColor: string;
+    icon: string;
+}
+
 export interface ProjectCardProps {
     id: number;
     title: string;
@@ -17,5 +23,5 @@ export interface ProjectCardProps {
     imageUrl: string;
     techStack: string[];
     codeLink: string;
-    tags: [{ tagName: string; tagColor: string; icon: string }];
+    tags: Tag[];
 }
