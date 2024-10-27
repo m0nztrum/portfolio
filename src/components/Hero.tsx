@@ -26,7 +26,7 @@ export const Hero = () => {
                             <FaGithub />
                         </motion.a>
                         <motion.a
-                            href="https://github.com/m0nztrum"
+                            href="https://www.linkedin.com/in/elvis-fiador-563839226/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-2xl text-dark-500 hover:text-zinc-50 md:text-3xl"
