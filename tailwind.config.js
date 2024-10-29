@@ -4,11 +4,14 @@ export default {
     theme: {
         extend: {
             colors: {
-                'dark-100': '#0e0e0c',
-                'dark-200': '#262626',
-                'dark-300': '#4D4D4D',
-                'dark-400': '#404040',
-                'dark-500': '#666666',
+                dark: {
+                    100: '#0e0e0c', // Darkest shade, use for backgrounds
+                    200: '#1c1c1a', // Dark shade for backgrounds
+                    300: '#333333', // Tertiary text or muted text
+                    400: '#595959', // Secondary text
+                    500: '#808080', // Primary text
+                    600: '#a6a6a6', // Emphasized text
+                },
             },
             fontFamily: {
                 sans: ['Gabarito', 'sans-serif'],

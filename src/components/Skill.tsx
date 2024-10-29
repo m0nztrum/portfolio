@@ -13,7 +13,7 @@ export const Skill = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.25 }}
                         viewport={{ once: true }}
-                        className="text-3xl font-bold min-[430px]:text-4xl md:text-5xl dark:text-stone-200"
+                        className="text-3xl font-bold text-stone-200 min-[430px]:text-4xl md:text-5xl"
                     >
                         Current Technologies
                     </motion.h1>
