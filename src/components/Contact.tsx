@@ -6,6 +6,7 @@ export const Contact = () => {
         email: '',
         message: '',
     });
+    console.log(formState);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -64,7 +65,7 @@ export const Contact = () => {
                 <div className="mt-8 flex justify-center">
                     <button
                         type="submit"
-                        className="rounded-lg bg-teal-500 px-6 py-3 font-semibold text-white transition-transform duration-200 hover:bg-teal-600 active:scale-95"
+                        className="flex rounded-lg bg-teal-500 px-6 py-3 font-semibold text-white"
                     >
                         Send Message
                     </button>
