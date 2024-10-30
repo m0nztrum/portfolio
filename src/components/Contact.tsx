@@ -1,16 +1,53 @@
-import { useState } from 'react';
+import { z } from 'zod';
+import { useRef } from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
-    const [formState, setFormState] = useState({
-        name: '',
-        email: '',
-        message: '',
+    const schemaValidation = z.object({
+        name: z
+            .string()
+            .min(3, { message: 'Name must be at least 3 characters.' })
+            .max(15, { message: 'Name must not exceed 15 characters.' }),
+        email: z.string().min(1, { message: 'Email is required.' }).email('Invalid Email'),
+        message: z
+            .string()
+            .min(20, { message: 'Message should be a minimum of 20 characters.' })
+            .max(200, { message: 'Message must not exceed 200 characters.' }),
     });
-    console.log(formState);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setFormState((prev) => ({ ...prev, [name]: value }));
+    type FormData = z.infer<typeof schemaValidation>;
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm<FormData>({
+        resolver: zodResolver(schemaValidation),
+    });
+
+    const form = useRef<HTMLFormElement>(null);
+
+    const sendEmail = (data: FormData) => {
+        if (!form.current) return;
+
+        emailjs
+            .sendForm(
+                import.meta.env.VITE_SERVICE_ID as string,
+                import.meta.env.VITE_TEMPLATE_ID as string,
+                form.current,
+                { publicKey: import.meta.env.VITE_PUBLIC_KEY as string },
+            )
+            .then(
+                () => {
+                    console.log('Email sent!');
+                    alert(`Hi ${data.name} your message has been sent!`);
+                },
+                (error) => {
+                    console.log('Failed', error.text);
+                },
+            );
     };
 
     return (
@@ -22,31 +59,41 @@ export const Contact = () => {
                     free to reach out!
                 </p>
             </div>
-            <form className="w-full max-w-2xl space-y-6">
+            <form
+                ref={form}
+                onSubmit={handleSubmit(sendEmail)}
+                className="w-full max-w-2xl space-y-6"
+            >
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div className="flex flex-col">
                         <label htmlFor="name" className="mb-2 font-medium text-stone-400">
                             Name*
                         </label>
                         <input
+                            id="name"
                             type="text"
-                            name="name"
+                            {...register('name')}
                             placeholder="John Doe"
-                            onChange={handleChange}
                             className="w-full rounded-md border border-dark-300 bg-dark-100 p-3 placeholder-gray-500 focus:border-stone-300 focus:outline-none"
                         />
+                        {errors.name && (
+                            <p className="mt-1 text-sm text-red-500">{errors.name.message}</p>
+                        )}
                     </div>
                     <div className="flex flex-col">
                         <label htmlFor="email" className="mb-2 font-medium text-stone-400">
                             Email*
                         </label>
                         <input
+                            id="email"
                             type="email"
-                            name="email"
+                            {...register('email')}
                             placeholder="john@doe.com"
-                            onChange={handleChange}
                             className="w-full rounded-md border border-dark-300 bg-dark-100 p-3 placeholder-gray-500 focus:border-stone-300 focus:outline-none"
                         />
+                        {errors.email && (
+                            <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>
+                        )}
                     </div>
                 </div>
                 <div className="flex flex-col">
@@ -54,18 +101,20 @@ export const Contact = () => {
                         Message*
                     </label>
                     <textarea
-                        name="message"
                         rows={5}
+                        {...register('message')}
                         placeholder="Your Message"
-                        onChange={handleChange}
                         className="w-full rounded-md border border-dark-300 bg-dark-100 p-3 placeholder-gray-500 focus:border-stone-300 focus:outline-none"
                     />
+                    {errors.message && (
+                        <p className="mt-1 text-sm text-red-500">{errors.message.message}</p>
+                    )}
                 </div>
 
                 <div className="mt-8 flex justify-center">
                     <button
                         type="submit"
-                        className="flex rounded-lg bg-teal-500 px-6 py-3 font-semibold text-white"
+                        className="flex rounded-lg bg-dark-400 px-6 py-3 font-semibold text-white"
                     >
                         Send Message
                     </button>
