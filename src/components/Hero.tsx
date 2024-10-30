@@ -19,7 +19,11 @@ const socialLinks = [
 export const Hero = () => {
     const scrollToTechnologies = () => {
         const section = document.getElementById('skills');
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            console.warn('Skill section not found');
+        }
     };
     return (
         <div>
