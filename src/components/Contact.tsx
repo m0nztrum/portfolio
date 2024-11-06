@@ -1,10 +1,12 @@
 import { z } from 'zod';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import emailjs from '@emailjs/browser';
+import { AlertCard } from './ui/Alert';
 
 export const Contact = () => {
+    const [showAlert, setShowAlert] = useState(true);
     const schemaValidation = z.object({
         name: z
             .string()
@@ -29,7 +31,7 @@ export const Contact = () => {
 
     const form = useRef<HTMLFormElement>(null);
 
-    const sendEmail = (data: FormData) => {
+    const sendEmail = () => {
         if (!form.current) return;
 
         emailjs
@@ -42,7 +44,7 @@ export const Contact = () => {
             .then(
                 () => {
                     console.log('Email sent!');
-                    alert(`Hi ${data.name} your message has been sent!`);
+                    setShowAlert(true);
                 },
                 (error) => {
                     console.log('Failed', error.text);
@@ -52,6 +54,7 @@ export const Contact = () => {
 
     return (
         <div className="relative flex flex-col items-center px-5 py-32 text-stone-200">
+            {showAlert && <AlertCard onClose={() => setShowAlert(false)} />}
             <div className="mb-12">
                 <h2 className="text-center text-4xl font-bold md:text-5xl">Get In Touch With Me</h2>
                 <p className="mt-4 text-center text-dark-500 md:max-w-md">
