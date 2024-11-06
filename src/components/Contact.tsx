@@ -3,10 +3,10 @@ import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import emailjs from '@emailjs/browser';
-import { AlertCard } from './ui/Alert';
+import { AlertCard } from './ui/AlertCard';
 
 export const Contact = () => {
-    const [showAlert, setShowAlert] = useState(true);
+    const [showAlert, setShowAlert] = useState(false);
     const schemaValidation = z.object({
         name: z
             .string()
