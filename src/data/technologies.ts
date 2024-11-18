@@ -29,7 +29,14 @@ export const currentTech = [
         imageUrl: 'images/techIcons/vercel.svg',
         bgColor: 'bg-white/90',
     },
+    {
+        name: 'Node.js',
+        description: 'JavaScript runtime',
+        imageUrl: 'images/techIcons/nodejs.svg',
+        bgColor: 'bg-[#339933]/40',
+    },
 ];
+
 export const programmingLanguages = [
     {
         name: 'C',

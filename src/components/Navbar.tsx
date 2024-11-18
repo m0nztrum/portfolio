@@ -8,7 +8,7 @@ export const Navbar = () => {
             {navItems.map((item: navItem, index: number) => (
                 <div
                     key={index}
-                    className="relative flex items-center space-x-1 text-neutral-50 hover:text-dark-accent hover:underline"
+                    className="relative flex items-center space-x-1 text-neutral-50 hover:scale-x-110 hover:text-dark-accent hover:underline"
                 >
                     {item.link.startsWith('#') ? (
                         //<a> tag to fix issues with ids #..
