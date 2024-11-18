@@ -28,7 +28,7 @@ export const Hero = () => {
     return (
         <div>
             <div
-                className="relative flex flex-col items-center justify-center pb-20 pt-36 sm:h-screen sm:p-0"
+                className="relative flex flex-col items-center justify-center px-5 pb-20 pt-36 sm:h-screen sm:p-0 sm:px-10"
                 id="home"
             >
                 <div className="relative z-10 flex flex-col items-center justify-center text-center font-bold">

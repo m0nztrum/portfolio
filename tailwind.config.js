@@ -11,6 +11,7 @@ export default {
                     400: '#595959', // Secondary text
                     500: '#808080', // Primary text
                     600: '#a6a6a6', // Emphasized text
+                    accent: '#00ffff',
                 },
             },
             fontFamily: {

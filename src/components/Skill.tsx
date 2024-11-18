@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export const Skill = () => {
     const skillIconItems = currentTech;
     return (
-        <div className="relative z-10 py-16 sm:py-24" id="skills">
+        <div className="relative z-10 mx-auto max-w-5xl py-16 sm:py-24" id="skills">
             <div className="mb-10 space-y-4">
                 <div>
                     <motion.h1

@@ -8,7 +8,7 @@ export const Navbar = () => {
             {navItems.map((item: navItem, index: number) => (
                 <div
                     key={index}
-                    className="relative flex items-center space-x-1 text-neutral-50 hover:text-neutral-300"
+                    className="relative flex items-center space-x-1 text-neutral-50 hover:text-dark-accent hover:underline"
                 >
                     {item.link.startsWith('#') ? (
                         //<a> tag to fix issues with ids #..
@@ -18,7 +18,7 @@ export const Navbar = () => {
                         <NavLink
                             to={item.link}
                             className={({ isActive }) =>
-                                isActive ? 'font-semibold text-dark-400 underline' : ''
+                                isActive ? 'font-semibold text-dark-accent' : ''
                             }
                         >
                             {item.name}
