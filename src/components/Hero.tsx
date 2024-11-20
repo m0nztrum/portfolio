@@ -1,7 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { MdArrowDownward } from 'react-icons/md';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
 const socialLinks = [
     { href: 'https://github.com/m0nztrum', icon: <FaGithub />, label: 'GitHub' },
@@ -18,7 +17,6 @@ const socialLinks = [
 ];
 
 export const Hero = () => {
-    const [showArrow, setShowArrow] = useState(false);
     const scrollToTechnologies = () => {
         const section = document.getElementById('skills');
         if (section) {
@@ -35,7 +33,7 @@ export const Hero = () => {
             >
                 <div className="relative z-10 flex flex-col items-center justify-center text-center">
                     <p className="max-w-5xl text-center text-3xl font-bold leading-snug tracking-wide sm:text-4xl md:text-5xl">
-                        Hey, I&apos;m Elvis, I am a Full-Stack Developer.
+                        Hey, my name is Elvis, I am a Full-Stack Developer.
                     </p>
                     <p className="pb-6 pt-5 text-xl text-dark-500 sm:text-base md:text-lg">
                         I love exploring and creating cool stuff 🚀

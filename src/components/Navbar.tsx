@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
     return (
-        <nav className="transition-[opacity, transform, filter] fixed inset-x-0 top-10 z-[5000] mx-auto flex max-w-fit items-center justify-center space-x-4 rounded-lg px-8 py-2 font-medium opacity-100 ring-1 ring-inset ring-dark-500 blur-0 backdrop-blur-2xl">
+        <nav className="transition-[opacity, transform, filter] fixed inset-x-0 top-10 z-[5000] mx-auto flex max-w-fit items-center justify-center space-x-4 rounded-lg px-8 py-2 font-medium opacity-100 ring-1 ring-inset ring-dark-300 blur-0 backdrop-blur-2xl">
             {navItems.map((item: navItem, index: number) => (
                 <div
                     key={index}
