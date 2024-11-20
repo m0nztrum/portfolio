@@ -24,10 +24,10 @@ export const projects = [
     {
         id: 2,
         title: 'crowdspark',
-        description: 'Personal portfolio site, built with React.js and Tailwind CSS.',
-        imageUrl: 'images/projects/portfolio.webp',
+        description: 'A simple web app to manange events and Q&A sessions.',
+        imageUrl: 'images/projects/wip.webp',
         projectLink: '',
-        codeLink: 'https://github.com/m0nztrum/portfolio',
+        codeLink: 'https://github.com/m0nztrum/crowdspark',
         techStack: ['React', 'Tailwind'],
         tags: [
             { icon: 'images/techIcons/react.svg', tagName: 'React', tagColor: 'bg-[#61DAFB]/20' },
