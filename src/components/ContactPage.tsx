@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import emailjs from '@emailjs/browser';
 import { AlertCard } from './ui/AlertCard';
 
-export const Contact = () => {
+export const ContactPage = () => {
     const [showAlert, setShowAlert] = useState(false);
     const schemaValidation = z.object({
         name: z

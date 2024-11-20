@@ -15,7 +15,7 @@ export default {
                 },
             },
             fontFamily: {
-                sans: ['Gabarito', 'sans-serif'],
+                sans: ['Inter', 'sans-serif'],
             },
         },
     },
