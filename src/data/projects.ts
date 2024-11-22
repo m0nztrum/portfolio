@@ -6,7 +6,6 @@ export const projects = [
         imageUrl: 'images/projects/portfolio.webp',
         projectLink: '',
         codeLink: 'https://github.com/m0nztrum/portfolio',
-        techStack: ['React', 'Tailwind'],
         tags: [
             { icon: 'images/techIcons/react.svg', tagName: 'React', tagColor: 'bg-[#61DAFB]/20' },
             {
@@ -28,7 +27,6 @@ export const projects = [
         imageUrl: 'images/projects/wip.webp',
         projectLink: '',
         codeLink: 'https://github.com/m0nztrum/crowdspark',
-        techStack: ['React', 'Tailwind'],
         tags: [
             { icon: 'images/techIcons/react.svg', tagName: 'React', tagColor: 'bg-[#61DAFB]/20' },
             {
@@ -40,6 +38,11 @@ export const projects = [
                 icon: 'images/techIcons/typescript.svg',
                 tagName: 'TypeScript',
                 tagColor: 'bg-[#007ACC]/20',
+            },
+            {
+                icon: 'images/techIcons/supabase.svg',
+                tagName: 'Supabase',
+                tagColor: 'bg-[#610]/20',
             },
         ],
     },
