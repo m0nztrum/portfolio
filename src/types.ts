@@ -21,7 +21,6 @@ export interface ProjectCardProps {
     title: string;
     description: string;
     imageUrl: string;
-    techStack: string[];
     codeLink: string;
     tags: Tag[];
 }
