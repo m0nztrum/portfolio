@@ -41,6 +41,12 @@ export const currentTech = [
         imageUrl: '/images/techIcons/supabase.svg',
         bgColor: 'bg-[#610]/20',
     },
+    {
+        name: 'Python',
+        description: 'Programming language',
+        imageUrl: '/images/techIcons/python.svg',
+        bgColor: 'bg-[#3771A1]/30',
+    },
 ];
 
 export const programmingLanguages = [
