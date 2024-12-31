@@ -35,6 +35,12 @@ export const currentTech = [
         imageUrl: 'images/techIcons/nodejs.svg',
         bgColor: 'bg-[#339933]/40',
     },
+    {
+        name: 'Supabase',
+        description: 'Open source backend',
+        imageUrl: '/images/techIcons/supabase.svg',
+        bgColor: 'bg-[#610]/20',
+    },
 ];
 
 export const programmingLanguages = [
