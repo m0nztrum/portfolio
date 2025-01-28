@@ -1,6 +1,6 @@
 import { navItems } from '../data';
 import { navItem } from '../types';
-import { NavLink } from 'react-router-dom';
+import { Link } from '@tanstack/react-router';
 
 export const Navbar = () => {
     return (
@@ -15,14 +15,12 @@ export const Navbar = () => {
                         <a href={item.link}>{item.name}</a>
                     ) : (
                         //<NavLink> tag for route paths
-                        <NavLink
+                        <Link
                             to={item.link}
-                            className={({ isActive }) =>
-                                isActive ? 'font-semibold text-dark-accent' : ''
-                            }
+                            activeProps={{ className: 'font-semibold text-dark-accent' }}
                         >
                             {item.name}
-                        </NavLink>
+                        </Link>
                     )}
                 </div>
             ))}
